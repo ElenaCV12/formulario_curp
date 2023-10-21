@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario Validacion</title>
+  <link rel="stylesheet" type="text/css" href="diseño.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+  <div class="contImagen">
+    <img class="imagen1" src="imagenes/logo.png" alt="">
+  </div>
+
+  <div class="contenedorDatos">
+    <h1 class="titulo1">Datos generales del alumno</h1>
+    <div class="barrita"></div>
+    <br><br>
+    <div id="uno">
+      <h2 class="titulo2">*Campos obligatorios</h2><br>
+      <div id="datos">
+        <form action="guardado.html" name="formulariocurp" method="get">
+        <label>CURP: <br><br> <input type="text" id="CURP" name="CURP" placeholder="CURP"/></label><br><br>
+        <label>Nombre*: <br><br> <input type="text" id="nombre" name="nombre" placeholder="Nombre" required/></label><br><br>
+        <label>Correo electronico*: <br><br> <input type="email" id="correo" name="correo" placeholder="Correo electronico" required/></label><br><br>
+        <label>Telefono fijo: <br><br> <input type="tel" id="telefono" name="telefono" placeholder="Telefono fijo"/></label>
+        </form>
+      </div>
+    </div>
+
+    <div id="dos">
+      <a href="https://www.gob.mx/curp/">Consultar CURP <img class="imagen2"  src="imagenes/[CITYPNG.COM]Gray Search Icon Button Transparent PNG - 700x700.png" alt=""></a><br>
+      <div id="datos2">
+        <form action="guardado.html" name="formulariocurp" method="get">
+        <label>Primer apellido*: <br><br> <input type="text" id="apellido" name="apellido" placeholder="Primer apellido" required/></label><br><br>
+        <label>Sexo: <br><br>
+        <select name="opciones" id="opciones">
+          <option value="opc1">Selecciona una opcion</option>
+          <option value="opc2">Hombre</option>
+          <option value="opc3">Mujer</option>
+        </select>
+        </label><br><br>
+        <label>Celular: <br><br> <input type="tel" id="celular" name="celular" placeholder="Celular"/></label>
+        </form>
+      </div>
+    </div>
+    <div id="tres">
+      <form action="guardado.html" name="formulariocurp" method="get">
+        <label>Segundo apellido: <br><br> <input type="text" id="apellido2" name="apellido2" placeholder="Segundo apellido"/></label><br><br>
+        <label>Fecha de nacimiento: <br><br> <input type="date" id="fecha" name="fecha"></label>
+      </form>
+    </div>
+    <div id="cuatro">
+      <form action="guardado.html" name="formulariocurp" method="get">
+      <label>Asunto*: <br> <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea></label>
+      <br><br>
+				<button id="validar" class="boton" type="button">Enviar</button>
+      </form>
+    </div>
+  </div>
+  <br><br><br><br>
+  <div class="Dnombre">
+    <h2>LUZ ELENA CANUL VENTURA</h2><br>
+    <h2>7SB</h2><br>
+    <h2>PROGRAMACION WEB</h2>
+  </div>
+
+  <script type="text/javascript">
+    $("#validar").click(function () {
+      if ($("#nombre").val().trim() == ''){
+        alert("Escribe tu nombre ");
+        $("#nombre").focus();
+        return 0;
+      }
+
+      if ($("#CURP").val().trim() == ''){
+        alert("Escribe tu CURP ");
+        $("#CURP").focus();
+        return 0;
+      }
+
+      if ($("#correo").val().trim() == ''){
+        alert("Escribe tu email ");
+        $("#correo").focus();
+        return 0;
+      }
+
+      if ($("#telefono").val().trim() == ''){
+        alert("Escribe tu telefono fijo ");
+        $("#telefono").focus();
+        return 0;
+      }
+
+      if ($("#apellido").val().trim() == ''){
+        alert("Escribe tu primer apellido ");
+        $("#apellido").focus();
+        return 0;
+      }
+
+      if ($("#opciones").val().trim() == ''){
+        alert("Selecciona una opcion ");
+        $("#opciones").focus();
+        return 0;
+      }
+
+      if ($("#celular").val().trim() == ''){
+        alert("Escribe tu numero de celular ");
+        $("#celular").focus();
+        return 0;
+      }
+
+      if ($("#apellido2").val().trim() == ''){
+        alert("Escribe tu segundo apellido ");
+        $("#apellido2").focus();
+        return 0;
+      }
+
+      if ($("#fecha").val().trim() == ''){
+        alert("Escribe la fecha ");
+        $("#fecha").focus();
+        return 0;
+      }
+
+      if ($("#comentario").val().trim() == ''){
+        alert("Escribe un asunto ");
+        $("#comentario").focus();
+        return 0;
+      }
+      document.formulariocurp.submit();
+
+    });
+
+  </script>
+
+
+</body>
+</html>

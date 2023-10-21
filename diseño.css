@@ -1,0 +1,152 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: helvetica;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333;
+}
+
+.contImagen{
+  width: 100%;
+  height: 150px;
+  margin: auto;
+  background-color: rgb(197, 197, 197);
+  text-align: center;
+}
+
+.imagen1{
+  width: 150px;
+  height: 100%;
+}
+
+.contenedorDatos{
+  width: 100%;
+  height: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+.titulo1{
+  text-align: left;
+  font-size: 25px;
+  font-weight: bold;
+  border-bottom: 1px black solid;
+}
+
+.barrita{
+  width: 50px;
+  height: 10px;
+  background-color: rgb(92, 15, 40);
+}
+
+#uno{
+  width: 400px;
+  height: 500px;
+  padding: 10px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+#datos{
+  padding-left: 20px;
+}
+
+.titulo2{
+  font-weight: bold;
+  color: rgb(92, 15, 40);
+}
+
+input{
+  width: 100%;
+  height: 40px;
+  margin: auto;
+  resize: none;
+	font-family: helvetica;
+	font-size: 14px;
+	color: #333;
+}
+
+#dos{
+  width: 400px;
+  height: 388px;
+  padding: 0;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+a{
+  width: 100px;
+  height: 50px;
+  background-color: rgb(92, 15, 40);
+  text-decoration: none;
+  color: white;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#datos2{
+  padding-top: 35px;
+}
+
+select{
+  width: 100%;
+  height: 40px;
+  margin: auto;
+  resize: none;
+}
+
+#tres{
+  width: 400px;
+  height: 329px;
+  padding: 0;
+  display: inline-block;
+  vertical-align: bottom;
+  padding-left: 10px;
+}
+
+#cuatro{
+  width: 1220px;
+  height: 300px;
+  padding: 0;
+  padding-left: 30px;
+}
+
+textarea{
+	width: 100%;
+	height: 250px;
+	resize: none;
+	font-family: helvetica;
+	font-size: 14px;
+	color: #333;
+	line-height: 24px;
+  border-top: 2px black solid;
+}
+
+.boton{
+  width: 100px;
+  height: 40px;
+  background-color: rgb(6, 31, 43);
+  color: white;
+  font-size: 20px;
+}
+
+.Dnombre{
+  width: 100%;
+  height: 150px;
+  background-color: rgb(92, 15, 40);
+  color: white;
+  text-align: center;
+  padding-top: 18px;
+}
+
+.imagen2{
+  width: 20px;
+  height: 20px;
+  vertical-align: top;
+}
